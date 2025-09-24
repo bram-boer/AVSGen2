@@ -164,6 +164,41 @@ Phase 4: Decommission
 
 ### Automation and Infrastructure as Code
 
+---------
+@description('Name of the AVS Private Cloud')
+param privateCloudName string
+
+@description('Location for the AVS Private Cloud')
+param location string
+
+@description('Network block in CIDR notation')
+param networkBlock string
+
+@description('Resource ID of the virtual network to integrate with')
+param vnetId string
+
+@description('Resource ID of the subnet to integrate with')
+param subnetId string
+
+resource avsPrivateCloud 'Microsoft.AVS/privateClouds@2023-03-01' = {
+  name: privateCloudName
+  location: location
+  properties: {
+    managementCluster: {
+      clusterSize: 3
+      hosts: [
+        'AV64'
+      ]
+    }
+    networkBlock: networkBlock
+    virtualNetworkIntegration: {
+      enabled: true
+      virtualNetworkId: vnetId
+      subnetId: subnetId
+    }
+  }
+}
+--------
 #### ARM Template Example
 ```json
 {
