@@ -87,9 +87,10 @@ Azure VMware Solution Gen2 represents the next evolution of Azure's VMware-based
 ## Additional Resources
 
 - [Azure VMware Solution Documentation](https://docs.microsoft.com/azure/azure-vmware/)
-- [AVS Gen2 Architecture Guide](#)
-- [Network Integration Best Practices](#)
-- [Migration Planning Guide](#)
+- [AVS Gen2 Architecture Changes](https://github.com/bram-boer/AVSGen2/blob/main/TECHNICAL_GUIDE.md#architecture-changes)
+- [Network Integration Best Practices](https://github.com/bram-boer/AVSGen2/blob/main/TECHNICAL_GUIDE.md#azure-virtual-network-integration)
+- [Migration Planning Guide](https://github.com/bram-boer/AVSGen2/blob/main/TECHNICAL_GUIDE.md#migration-strategies)
+- [How does this look in Azure Portal and VMWare Tooling](#)
 
 ## Support and Feedback
 
